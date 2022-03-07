@@ -55,7 +55,7 @@ function check(){
     let originalColor = rgbColorDiv.innerText;
     let clickedColor = this.style.backgroundColor;
     // console.log(clickedColor);
-    if(originalColor==clickedColor){
+    if(originalColor==clickedColor && originalColor!=""){
         // console.log("You won");
         for(let i=0;i<easyboxes.length;++i){
             let ourBox = easyboxes[i];
@@ -64,7 +64,7 @@ function check(){
         }
         middleContainer.innerText = "Bravo, You won!";
     }
-    else{
+    else if(originalColor!=""){
         // console.log("Try Again");
         middleContainer.innerHTML = "Try Again!";
         this.classList.add("hide");

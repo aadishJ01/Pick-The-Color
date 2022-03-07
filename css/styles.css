@@ -1,7 +1,38 @@
+body{
+    background: url(https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
 .box{
-    height: 200px;
+    height: 90px;
     border-radius: 10px;
     margin: 30px;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 12% 3% 5% 4%;
+    padding: 10px;
+    background-color: rgba(0,0,0,1);
+    border-radius: 5%;
+}
+
+.button-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(255,255,255,1);
+    margin-top: 0.5%;
+}
+
+.center{
+    text-align: center;
 }
 
 .github-logo{
@@ -13,9 +44,28 @@
 }
 
 .main-container{
-    padding: 5% 20% 5% 20%;
+    position: relative;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: rgba(255,255,255,1);
+    border-radius: 5%;
+}
+
+.middle-container{
+    background-color: rgba(66,65,255, 0.9);
+    width: 60%;
+    margin: 3% auto 3% auto;
+    padding: 3% 0 3% 0;
+    border-radius: 5%;
 }
 
 .rgb-color{
-    text-align: center;
+    color: black;
+}
+
+.top-contatiner{
+    background-color: rgba(255, 191, 0, 0.9);
 }
