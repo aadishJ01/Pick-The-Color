@@ -21,6 +21,11 @@ body{
     margin: 30px;
 }
 
+.box:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.8);
+}
+
 .box-container{
     display: grid;
     grid-template-columns: auto auto auto;
