@@ -4,6 +4,10 @@
     margin: 30px;
 }
 
+.github-logo{
+    font-size: 23px;
+}
+
 .hide{
     visibility: hidden;
 }
