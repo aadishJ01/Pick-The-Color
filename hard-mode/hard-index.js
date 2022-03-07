@@ -2,6 +2,8 @@ let generateNewColorButton = document.querySelector(".generate-new-color");
 let rgbColorDiv = document.querySelector(".rgb-color");
 let middleContainer = document.querySelector(".middle-container");
 
+document.querySelector(".main-container").classList.add("hide");
+
 hardboxes = [];
 hardboxes.push(document.querySelector("#eb1"));
 hardboxes.push(document.querySelector("#eb2"));
@@ -24,8 +26,9 @@ function showAllBoxes(){
 
 function changeColor(){
     showAllBoxes();
+    document.querySelector(".main-container").classList.remove("hide");
 
-    middleContainer.innerText="Choose the Box corresponding to the given RGB code.";
+    middleContainer.innerHTML="<h2>Choose the Box corresponding to the given RGB code.</h2>";
 
     let r= Math.floor(Math.random()*256);
     let g= Math.floor(Math.random()*256);
@@ -62,11 +65,11 @@ function check(){
             ourBox.style.backgroundColor= originalColor;
             showAllBoxes();
         }
-        middleContainer.innerText = "Bravo, You won!";
+        middleContainer.innerHTML = "<h2>Bravo, You won!</h2>";
     }
     else if(originalColor!=""){
         // console.log("Try Again");
-        middleContainer.innerHTML = "Try Again!";
+        middleContainer.innerHTML = "<h2>Try Again!</h2>";
         this.classList.add("hide");
     }
 }

@@ -9,7 +9,7 @@ body{
 
 .box{
     height: 90px;
-    border-radius: 10px;
+    border-radius: 5%;
     margin: 30px;
 }
 
@@ -68,4 +68,54 @@ body{
 
 .top-contatiner{
     background-color: rgba(255, 191, 0, 0.9);
+}
+
+.top-contatiner h1{
+    font-size: 60px;
+}
+
+.top-contatiner h3{
+    font-size: 35px;
+}
+
+@media (min-width: 600px) and (max-width: 768px){
+    .top-contatiner h1{
+        font-size: 40px;
+    }
+    
+    .top-contatiner h3{
+        font-size: 20px;
+    }
+
+    .middle-container h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .top-contatiner h1{
+        font-size: 40px;
+    }
+    
+    .top-contatiner h3{
+        font-size: 20px;
+    }
+
+    .middle-container h2{
+        font-size: 18px;
+    }
+
+    .box{
+        height: 60px;
+        border-radius: 5%;
+        margin: 10px;
+    }
+
+    .main-container{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        background-color: rgba(255,255,255,1);
+        border-radius: 5%;
+    }
 }
